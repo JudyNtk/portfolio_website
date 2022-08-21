@@ -1,0 +1,212 @@
+@font-face {
+    font-family: "But";
+    src: url("../assets/fonts/Butler/Butler_Black.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Betty";
+    src: url("../assets/fonts/Butler/Butler_ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Rob";
+    src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Rob Black';
+    src: url('../assets/fonts/Roboto-Black.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rob';
+    box-sizing: border-box;
+}
+
+hr {
+    width: 135%;
+}
+
+h1 {
+    font-family: 'But';
+    font-size: 40px;
+    margin-top: 0;
+    margin-left: 20%;
+}
+
+.openbtn {
+    position: relative;
+    /* left: 3%;  */
+    /* bott: 15%; */
+    font-size: 8px;
+    background-color: #003049;
+    font-family: 'But';
+    border-radius: 100%;
+    padding: 10px 1.4px;
+    margin-top: 1%;
+    margin-left: 95%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    background-color: transparent;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery .filters {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    /* position: relative; */
+}
+
+.gallery .filters .filter-item {
+    color: black;
+    text-transform: uppercase;
+    font-size:
+        /*16*/
+        8px;
+    display: inline-block;
+    margin: 0
+        /*10*/
+        3px;
+    padding: 7px 20px;
+    font-family: 'Betty';
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid black;
+}
+
+.gallery .filters .filter-item.active {
+    color: black;
+}
+
+.gallery .gallery-item {
+    width: calc(100% / 3);
+    padding:
+        /*10*/
+        -15px;
+    margin-top: -50px;
+    /* late add*/
+
+}
+
+.gallery .gallery-item img {
+    width: 100%;
+}
+
+/* Animation on clicking filters */
+.gallery .gallery-item.show {
+    animation: fadein 0.5s ease;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+}
+
+.gallery .gallery-item.hide {
+    display: none;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Overlay */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: whitesmoke;
+    /*rgb(0,0,0);  Black fallback color */
+    background-color: whitesmoke;
+    /*rgba(0,0,0, 0.9); Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    /* font-family: "Aeo"; */
+
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    /* right: 35%; */
+    top: 10%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center left;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+    /* text-align: left; */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    font-size: 45px;
+    /*360px -> 520px de base*/
+    left: 95%;
+    text-decoration: none;
+
+    color: black;
+    /*#818181;*/
+
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+    line-height: 20%;
+    /*100%*/
+    font-family: 'But';
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+    color: #9d0208
+        /*#f1f1f1; */
+    ;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top:
+        /*20px;*/
+        5px;
+    right: 45px;
+    font-size: 24px;
+    /*60px; */
+}

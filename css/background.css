@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "But";
+    src: url("../assets/fonts/Butler/Butler_Black.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Rob";
+    src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+*::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rob';
+    box-sizing: border-box;
+}
+
+hr {
+    width: 135%;
+}
+
+h1 {
+    font-family: 'But';
+    font-size: 40px;
+    margin-top: 0;
+    margin-left: 20%;
+}
+
+h3 {
+    font-family: 'But';
+}
+
+.timeline-section {
+    background-color: transparent;
+    min-height: 100vh;
+    padding: 100px 15px;
+    margin-top: -15%;
+
+}
+
+.timeline-items {
+    max-width: 550px;
+    /*1000px before*/
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline-items::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    left: calc(50% - 1px);
+}
+
+.timeline-item {
+    background-color:
+        /*#9e005d*/
+        transparent;
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot {
+    height: 16px;
+    width: 16px;
+    background-color: black;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-date {
+    font-family: 'But';
+    font-size: 18px;
+    color: #003049;
+    margin: 6px 0 15px;
+}
+
+.timeline-content {
+    background-color: #9d0208;
+    padding:
+        /*30*/
+        15px;
+    border-radius: 5px;
+}
+
+.timeline-content h3 {
+    font-size:
+        /*20px*/
+        14px;
+    color: #ffffff;
+    margin: 0 0 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.timeline-content p {
+    color: #ffffff;
+    font-size:
+        /*16*/
+        12px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.openbtn {
+    position: relative;
+    /* left: 3%;  */
+    /* bott: 15%; */
+    font-size: 8px;
+    background-color: #003049;
+    font-family: 'But';
+    border-radius: 100%;
+    padding: 10px 1.4px;
+    margin-top: 1%;
+    margin-left: 95%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 121.5vh;
+    /*100vh*/
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: whitesmoke;
+    /*rgb(0,0,0);  Black fallback color */
+    background-color: whitesmoke;
+    /*rgba(0,0,0, 0.9); Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    /* font-family: "Aeo"; */
+
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    /* right: 35%; */
+    top: 10%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center left;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+    /* text-align: left; */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    font-size: 45px;
+    /*360px -> 520px de base*/
+    left: 95%;
+    text-decoration: none;
+
+    color: black;
+    /*#818181;*/
+
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+    line-height: 20%;
+    /*100%*/
+    font-family: 'But';
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+    color: #9d0208
+        /*#f1f1f1; */
+    ;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top:
+        /*20px;*/
+        5px;
+    right: 45px;
+    font-size: 24px;
+    /*60px; */
+}

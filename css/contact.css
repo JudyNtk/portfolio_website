@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'But';
+    src: url('../assets/fonts/Butler/Butler_Black.otf') format('opentype');
+    /* font-weight: 900;
+    font-style: normal; */
+}
+
+@font-face {
+    font-family: 'Rob';
+    src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    /*max-height: 400px;*/
+    background-image: url(../assets/images/WavesVII.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: static;
+    bottom: 0;
+}
+
+/* img {
+    top: 200px;
+} */
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+} */
+
+hr {
+    width: 135%;
+}
+
+h1 {
+    font-family: 'But';
+    font-size: 40px;
+    margin-top: 0.2%;
+    margin-left: 20%;
+}
+
+p {
+    z-index: 0;
+}
+
+/* .bg {
+    background-image: url("../images/waves_Plan\ de\ travail\ 1.svg");
+    background-repeat: no-repeat;
+    background-size: 1800px 50%;
+} */
+
+p a {
+    color: black;
+}
+
+footer {
+    font-family: 'But';
+    font-size: 3px;
+    /* position: relative; */
+    text-align: center;
+    margin-left: 26%;
+    position: absolute;
+    bottom: 0;
+    color: black;
+}
+
+
+
+.openbtn {
+    /* position: relative;
+    /* left: 3%; */
+    /* bott: 15%; */
+    /*font-size: 120px;
+    border-color: blue;
+    font-family: 'But'; */
+    position: relative;
+    font-size: 8px;
+    background-color: #003049;
+    font-family: 'But';
+    border-radius: 100%;
+    padding: 10px 1.4px;
+    margin-top: 1%;
+    margin-left: 95%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-text {
+    font-family: 'Rob';
+    font-size:
+        /*15px;*/
+        /*12px*/
+        11px;
+    width: 60%;
+    margin-bottom:
+        /*-24.435%;*/
+        /*20,78%*/
+        -23%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+/* .contact-text a {
+    color: black;
+} */
+
+.contact-text .links {
+    /* display: flex; */
+    /* margin-right: 78%; */
+    text-align: center;
+    justify-content: space-around;
+
+
+}
+
+/* .contact-text .links .cv {
+    width: 90%;
+    height: 10vh;
+} */
+
+.contact-text .cv {
+    margin-left: 41%;
+    font-family: 'But';
+    font-size: 6px;
+    text-decoration: none;
+    padding: 5px 3px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: whitesmoke;
+    /*rgb(0,0,0);  Black fallback color */
+    background-color: whitesmoke;
+    /*rgba(0,0,0, 0.9); Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    /* font-family: "Aeo"; */
+
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    /* right: 35%; */
+    top: 10%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center left;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+    /* text-align: left; */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    left: 95%;
+    text-decoration: none;
+    font-size: 45px;
+    /*360px -> 520px de base*/
+    color: black
+        /*#818181;*/
+    ;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+    line-height:
+        /*100%;*/
+        20%;
+    font-family: 'But';
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+    color: #9d0208
+        /*#f1f1f1; */
+    ;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top:
+        /*20px;*/
+        5px;
+    right: 45px;
+    font-size: 24px
+        /*60px; */
+}
+
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+/* @media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+} */
+
+/* #waves { */
+/* bottom: -500px; */
+/* /* position: fixed; */
+/* width: 1800px; */
+/* height: 20%; */
+/* top: 200px; */
+/* right: 25%; */
+
+/* left: 97%; */
+/* display: flex; */
+/* } */

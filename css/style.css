@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'But';
+  src: url('../assets/fonts/Butler/Butler_Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  background-image: url(../assets/images/avatar2108.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /*position: relative;*/
+  /* width: 5%;*/
+  /*height: 50%;*/
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  width: 135%;
+}
+
+img {
+  width:
+    /*30px*/
+    5%;
+  /*top: -38%;*/
+  z-index: 0;
+  margin-top: -190%;
+}
+
+li {
+  text-decoration: none;
+  display: inline;
+}
+
+.openbtn {
+  position: relative;
+  /* left: 3%;  */
+  /* bott: 15%; */
+  font-size: 8px;
+  background-color: #003049;
+  font-family: 'But';
+  border-radius: 100%;
+  padding: 10px 1.4px;
+  margin-top: 1%;
+  margin-left: 95%;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: -8000;
+}
+
+.home-text {
+  top: 400%;
+}
+
+/* .logo {
+  /* background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain; */
+/* height: 10px;
+  width: -140vh;*/
+/*margin-top: 15px;
+} */
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: whitesmoke;
+  /*rgb(0,0,0);  Black fallback color */
+  background-color: whitesmoke;
+  /*rgba(0,0,0, 0.9); Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  /* font-family: "Aeo"; */
+
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  /* right: 35%; */
+  top: 10%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center left;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+  /* text-align: left; */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  left: 95%;
+  text-decoration: none;
+  font-size: 45px;
+  /* 40 before*/
+  /*360px -> 520px at first*/
+  color: black
+    /*#818181;*/
+  ;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+  line-height: 20%;
+  /*25 before*/
+  font-family: 'But';
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #9d0208
+    /*#f1f1f1; */
+  ;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top:
+    /*20px;*/
+    5px;
+  right: 45px;
+  font-size: 24px;
+  /*60px; */
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+/* @media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+} */
+
+
+
+#burger {
+  position:
+    /*fixed*/
+    absolute;
+  width: 50%;
+  height:
+    /*20%*/
+    20%;
+  bottom:
+    /*82%*/
+    80%;
+  right: 25%;
+  /* left: 97%; */
+  /* display: flex; */
+}
+
+
+#canvas1 {
+  position: inherit;
+  width: 120%;
+  z-index: 3000;
+  height:
+    /*100% -86% VH*/
+    80vh;
+  /* background: #333; */
+  opacity: 0.2;
+}

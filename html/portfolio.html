@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <button class="openbtn" onclick="openNav()">OPEN</button>
+    <h1>PORTFOLIO</h1>
+    <div class="gallery">
+        <div class="container">
+            <!-- Filters -->
+            <div class="row">
+                <div class="filters">
+                    <span class="filter-item active" data-filter="all">Tout</span>
+                    <span class="filter-item" data-filter="asp-net">ASP.NET</span>
+                    <span class="filter-item" data-filter="csharp">C#</span>
+                    <span class="filter-item" data-filter="js">JavaScript</span>
+                    <span class="filter-item" data-filter="php">PHP</span>
+                    <span class="filter-item" data-filter="python">Python</span>
+                    <span class="filter-item" data-filter="symfony">Symfony</span>
+                </div>
+            </div>
+
+            <!-- Gallery section -->
+            <div class="row">
+                <div class="gallery-item asp-net">
+                    <div class="gallery-item-inner">
+                        <img src="../assets/images/portfolio/coming1.svg">
+                    </div>
+                </div>
+
+
+                <div class="gallery-item csharp">
+                    <div class="gallery-item-inner">
+                        <img src="../assets/images/portfolio/coming2.svg">
+                    </div>
+                </div>
+
+
+                <div class="gallery-item js">
+                    <div class="gallery-item-inner">
+                        <img src="../assets/images/portfolio/coming3.svg">
+                    </div>
+                </div>
+
+
+                <div class="gallery-item php">
+                    <div class="gallery-item-inner">
+                        <img src="../assets/images/portfolio/coming4.svg">
+                    </div>
+                </div>
+
+
+                <div class="gallery-item python">
+                    <div class="gallery-item-inner">
+                        <img src="../assets/images/portfolio/coming5.svg">
+                    </div>
+                </div>
+
+
+                <div class="gallery-item symfony">
+                    <div class="gallery-item-inner">
+                        <img src="../assets/images/portfolio/coming6.svg">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="../index.html">HOME</a>
+            <hr>
+            <a href="about.html">ABOUT</a>
+            <hr>
+            <a href="background.html">BACKGROUND</a>
+            <hr>
+            <a href="skills.html">SKILLS</a>
+            <hr>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <hr>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </div>
+    <script src="../js/portfolio.js"></script>
+</body>
+
+</html>
