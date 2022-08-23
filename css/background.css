@@ -26,25 +26,30 @@ hr {
 
 h1 {
     font-family: 'But';
-    font-size: 40px;
+    font-size:
+        /*40*/
+        112px;
     margin-top: 0;
     margin-left: 20%;
 }
 
 h3 {
     font-family: 'But';
+    font-size: 35px;
 }
 
 .timeline-section {
     background-color: transparent;
     min-height: 100vh;
-    padding: 100px 15px;
+    padding:
+        /*100px 15px*/
+        305px 35px;
     margin-top: -15%;
 
 }
 
 .timeline-items {
-    max-width: 550px;
+    max-width: 1140px;
     /*1000px before*/
     margin: auto;
     display: flex;
@@ -95,7 +100,9 @@ h3 {
 
 .timeline-date {
     font-family: 'But';
-    font-size: 18px;
+    font-size:
+        /*18px*/
+        33px;
     color: #003049;
     margin: 6px 0 15px;
 }
@@ -104,14 +111,18 @@ h3 {
     background-color: #9d0208;
     padding:
         /*30*/
-        15px;
-    border-radius: 5px;
+        /*15*/
+        25px;
+    border-radius:
+        /*5*/
+        10px;
 }
 
 .timeline-content h3 {
     font-size:
         /*20px*/
-        14px;
+        /*14*/
+        33px;
     color: #ffffff;
     margin: 0 0 15px;
     text-transform: capitalize;
@@ -122,20 +133,28 @@ h3 {
     color: #ffffff;
     font-size:
         /*16*/
-        12px;
+        /*12*/
+        25px;
     font-weight: 300;
-    line-height: 22px;
+    line-height:
+        /*22px*/
+        110%;
+    text-align: justify;
 }
 
 .openbtn {
     position: relative;
     /* left: 3%;  */
     /* bott: 15%; */
-    font-size: 8px;
+    font-size:
+        /*8*/
+        15px;
     background-color: #003049;
     font-family: 'But';
     border-radius: 100%;
-    padding: 10px 1.4px;
+    padding:
+        /*10px 1.4px*/
+        23px 7px;
     margin-top: 1%;
     margin-left: 95%;
     color: white;
@@ -195,7 +214,10 @@ h3 {
 /* The navigation links inside the overlay */
 .overlay a {
     padding: 8px;
-    font-size: 45px;
+    font-size:
+        /*45*/
+        /*154*/
+        118px;
     /*360px -> 520px de base*/
     left: 95%;
     text-decoration: none;
@@ -207,7 +229,9 @@ h3 {
     /* Display block instead of inline */
     transition: 0.3s;
     /* Transition effects on hover (color) */
-    line-height: 20%;
+    line-height:
+        /*20*/
+        64%;
     /*100%*/
     font-family: 'But';
 }
@@ -227,6 +251,8 @@ h3 {
         /*20px;*/
         5px;
     right: 45px;
-    font-size: 24px;
+    font-size:
+        /*24*/
+        54px;
     /*60px; */
 }

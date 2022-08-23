@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: url(../assets/images/avatar2108.svg);
   background-repeat: no-repeat;
@@ -21,16 +25,17 @@ hr {
   width: 135%;
 }
 
-img {
+
+/* img {
   width:
     /*30px*/
-    5%;
-  /*top: -38%;*/
-  z-index: 0;
-  margin-top: -190%;
-}
+/*5%;*/
+/*top: -38%;*/
+/* z-index: 0;
+margin-top: -190%;
+} */
 
-li {
+*/ li {
   text-decoration: none;
   display: inline;
 }
@@ -39,17 +44,17 @@ li {
   position: relative;
   /* left: 3%;  */
   /* bott: 15%; */
-  font-size: 8px;
+  font-size: 15px;
   background-color: #003049;
   font-family: 'But';
   border-radius: 100%;
-  padding: 10px 1.4px;
+  padding: 23px 7px;
   margin-top: 1%;
   margin-left: 95%;
   color: white;
   border: none;
   cursor: pointer;
-  z-index: -8000;
+  z-index: 10;
 }
 
 .home-text {
@@ -72,7 +77,7 @@ li {
   width: 0;
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 100;
   /* Sit on top */
   left: 0;
   top: 0;
@@ -108,7 +113,10 @@ li {
   padding: 8px;
   left: 95%;
   text-decoration: none;
-  font-size: 45px;
+  font-size:
+    /*45*/
+    /*154*/
+    118px;
   /* 40 before*/
   /*360px -> 520px at first*/
   color: black
@@ -118,7 +126,9 @@ li {
   /* Display block instead of inline */
   transition: 0.3s;
   /* Transition effects on hover (color) */
-  line-height: 20%;
+  line-height:
+    /*20*/
+    64%;
   /*25 before*/
   font-family: 'But';
 }
@@ -136,9 +146,10 @@ li {
   position: absolute;
   top:
     /*20px;*/
-    5px;
+    /*5*/
+    10px;
   right: 45px;
-  font-size: 24px;
+  font-size: 54px;
   /*60px; */
 }
 
@@ -157,30 +168,29 @@ li {
 
 
 
-#burger {
-  position:
-    /*fixed*/
-    absolute;
+/* #burger {
+  position: */
+/*fixed*/
+/* absolute;
   width: 50%;
-  height:
-    /*20%*/
-    20%;
-  bottom:
-    /*82%*/
-    80%;
-  right: 25%;
-  /* left: 97%; */
-  /* display: flex; */
-}
+  height: */
+/*20%*/
+/* bottom: */
+/*82%*/
+/* 80%;
+  right: 25%; */
+/* left: 97%; */
+/* display: flex; 
+}*/
 
 
 #canvas1 {
   position: inherit;
-  width: 120%;
-  z-index: 3000;
+  width: 100%;
+  z-index: -1000;
   height:
     /*100% -86% VH*/
     80vh;
   /* background: #333; */
-  opacity: 0.2;
+  opacity: 0.4;
 }

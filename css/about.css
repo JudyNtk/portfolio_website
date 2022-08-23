@@ -26,25 +26,31 @@ hr {
 
 h1 {
     font-family: 'But';
-    font-size: 40px;
+    font-size:
+        /*40*/
+        112px;
     margin-top: 0.2%;
     margin-left: 20%;
 }
 
 h3 {
     font-family: 'But';
-    font-size: 20px;
+    font-size:
+        /*20*/
+        45px;
     margin-left: 20%;
 }
 
 marquee {
     font-family: 'But';
-    font-size: 12px;
+    font-size:
+        /*12*/
+        30px;
     color: white;
     /* color: blanchedalmond; */
     /* border: solid #003049; */
     background: #003049;
-    /* margin-bottom: -0.9%; */
+    margin-bottom: -7.4%;
     /* object-fit: contain; */
     /* bottom: 0; */
 }
@@ -65,11 +71,17 @@ marquee {
     border-color: blue;
     font-family: 'But'; */
     position: relative;
-    font-size: 8px;
+    font-size:
+        /*8*/
+        15px;
     background-color: #003049;
     font-family: 'But';
     border-radius: 100%;
-    padding: 10px 1.4px;
+    padding:
+        /*10*/
+        23px
+        /*1.4*/
+        7px;
     margin-top: 1%;
     margin-left: 95%;
     color: white;
@@ -82,7 +94,9 @@ marquee {
     font-size:
         /*15px;*/
         /*12px*/
-        11px;
+        /*11*/
+        /*30*/
+        25px;
     width: 60%;
     margin-bottom:
         /*4.45%;*/
@@ -135,7 +149,10 @@ marquee {
     padding: 8px;
     left: 95%;
     text-decoration: none;
-    font-size: 45px;
+    font-size:
+        /*45*/
+        /*154*/
+        118px;
     /*360px -> 520px de base*/
     color: black
         /*#818181;*/
@@ -144,7 +161,7 @@ marquee {
     /* Display block instead of inline */
     transition: 0.3s;
     /* Transition effects on hover (color) */
-    line-height: 20%;
+    line-height: 64%;
     /*100%*/
     font-family: 'But';
 }
@@ -164,7 +181,9 @@ marquee {
         /*20px;*/
         5px;
     right: 45px;
-    font-size: 24px
+    font-size:
+        /*24*/
+        54px
         /*60px; */
 }
 

@@ -40,7 +40,7 @@ class Particule {
 
 function init() {
     particuleTab = [];
-    for (let i = 0; i < 35; i++) { // 100 -> 55 à la base
+    for (let i = 0; i < 25; i++) { // 100 -> 55 à la base
         let taille = (Math.random() + 0.01) * 7; // 20 à la base
         let x = Math.random() * (window.innerWidth - taille * 2);
         let y = Math.random() * (window.innerHeight - taille * 2);

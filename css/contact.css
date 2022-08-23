@@ -10,16 +10,20 @@
     src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
 }
 
+/* * {
+    margin: 0;
+    padding: 0;
+} */
 
 body {
     padding: 0;
     margin: 0;
     /*max-height: 400px;*/
-    background-image: url(../assets/images/WavesVII.svg);
+    /* background-image: url(../assets/images/WavesVII.svg);
     background-size: cover;
     background-repeat: no-repeat;
     position: static;
-    bottom: 0;
+    bottom: 0; */
 }
 
 /* img {
@@ -39,14 +43,16 @@ hr {
 
 h1 {
     font-family: 'But';
-    font-size: 40px;
+    font-size:
+        /*40*/
+        112px;
     margin-top: 0.2%;
     margin-left: 20%;
 }
 
-p {
+/* p {
     z-index: 0;
-}
+} */
 
 /* .bg {
     background-image: url("../images/waves_Plan\ de\ travail\ 1.svg");
@@ -56,20 +62,100 @@ p {
 
 p a {
     color: black;
+    /* z-index: 5000; */
+
 }
 
-footer {
-    font-family: 'But';
-    font-size: 3px;
-    /* position: relative; */
-    text-align: center;
-    margin-left: 26%;
+/* footer {
+    position: relative;
+    width: 100%;
+    height: 118vh;
+    background: transparent;
+    overflow: hidden;
+} */
+
+footer .wave {
     position: absolute;
     bottom: 0;
-    color: black;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    background: url(../assets/images/redWaveIII.png);
+    background-size: 1280px 450px;
 }
 
+footer .wave.wave1 {
+    animation: animate 200s linear infinite;
+    z-index: -997;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0px;
+}
 
+footer .wave.wave2 {
+    animation: animate2 145s linear infinite;
+    z-index: -998;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+footer .wave.wave3 {
+    animation: animate 180s linear infinite;
+    z-index: -999;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+footer .wave.wave4 {
+    animation: animate2
+        /*5*/
+        215s linear infinite;
+    z-index: -1000;
+    opacity: 0.7;
+    animation-delay: 0s;
+    bottom: 20px;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+.main-footer {
+    display: flex;
+    bottom: 0;
+}
+
+.copyright {
+    position: absolute;
+    font-family: 'But';
+    text-align: center;
+    bottom: 0;
+    font-size: 15px;
+    color: black;
+    z-index: 1;
+}
+
+/* .main-footer {
+    bottom: -165px;
+} */
 
 .openbtn {
     /* position: relative;
@@ -79,16 +165,21 @@ footer {
     border-color: blue;
     font-family: 'But'; */
     position: relative;
-    font-size: 8px;
+    font-size:
+        /*8*/
+        15px;
     background-color: #003049;
     font-family: 'But';
     border-radius: 100%;
-    padding: 10px 1.4px;
+    padding:
+        /*10px 1.4px*/
+        23px 7px;
     margin-top: 1%;
     margin-left: 95%;
     color: white;
     border: none;
     cursor: pointer;
+    z-index: 1500;
 }
 
 .contact-text {
@@ -96,15 +187,19 @@ footer {
     font-size:
         /*15px;*/
         /*12px*/
-        11px;
+        /*11*/
+        /*30*/
+        25px;
     width: 60%;
     margin-bottom:
         /*-24.435%;*/
         /*20,78%*/
-        -23%;
+        /*-23*/
+        -40%;
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
+
 }
 
 /* .contact-text a {
@@ -116,7 +211,7 @@ footer {
     /* margin-right: 78%; */
     text-align: center;
     justify-content: space-around;
-
+    z-index: 2030;
 
 }
 
@@ -128,13 +223,16 @@ footer {
 .contact-text .cv {
     margin-left: 41%;
     font-family: 'But';
-    font-size: 6px;
+    font-size:
+        /*6*/
+        20px;
     text-decoration: none;
     padding: 5px 3px;
     border: none;
     border-radius: 5px;
     color: white;
     background-color: black;
+    z-index: 1600;
 }
 
 /* The Overlay (background) */
@@ -144,7 +242,7 @@ footer {
     width: 0;
     position: fixed;
     /* Stay in place */
-    z-index: 1;
+    z-index: 2700;
     /* Sit on top */
     left: 0;
     top: 0;
@@ -180,7 +278,10 @@ footer {
     padding: 8px;
     left: 95%;
     text-decoration: none;
-    font-size: 45px;
+    font-size:
+        /*45*/
+        /*154*/
+        118px;
     /*360px -> 520px de base*/
     color: black
         /*#818181;*/
@@ -191,7 +292,8 @@ footer {
     /* Transition effects on hover (color) */
     line-height:
         /*100%;*/
-        20%;
+        /*20*/
+        64%;
     font-family: 'But';
 }
 
@@ -210,7 +312,9 @@ footer {
         /*20px;*/
         5px;
     right: 45px;
-    font-size: 24px
+    font-size:
+        /*24*/
+        54px
         /*60px; */
 }
 

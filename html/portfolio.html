@@ -12,10 +12,61 @@
 <body>
     <button class="openbtn" onclick="openNav()">OPEN</button>
     <h1>PORTFOLIO</h1>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">Tout</button>
+        <button class="btn" onclick="filterSelection('asp-net')">ASP.NET</button>
+        <button class="btn" onclick="filterSelection('csharp')">C#</button>
+        <button class="btn" onclick="filterSelection('js')">JavaScript</button>
+        <button class="btn" onclick="filterSelection('php')">PHP</button>
+        <button class="btn" onclick="filterSelection('python')">Python</button>
+        <button class="btn" onclick="filterSelection('symfony')">Symfony</button>
+    </div>
     <div class="gallery">
-        <div class="container">
-            <!-- Filters -->
-            <div class="row">
+        <div class="row">
+            <div class="column asp-net">
+                <div class="content">
+                    <img src="../assets/images/portfolio/coming1.svg" alt="">
+                    <!-- <h3>ASP.NET</h3> -->
+                </div>
+            </div>
+            <div class="column csharp">
+                <div class="content">
+                    <img src="../assets/images/portfolio/coming2.svg" alt="">
+                    <!-- <h3>C#</h3> -->
+                </div>
+            </div>
+            <div class="column js">
+                <div class="content">
+                    <img src="../assets/images/portfolio/coming3.svg" alt="">
+                    <!-- <h3>JavaScript</h3> -->
+                </div>
+            </div>
+            <div class="column php">
+                <div class="content">
+                    <img src="../assets/images/portfolio/coming4.svg" alt="">
+                    <!-- <h3>PHP</h3> -->
+                </div>
+            </div>
+            <div class="column python">
+                <div class="content">
+                    <img src="../assets/images/portfolio/coming5.svg" alt="">
+                    <!-- <h3>Python</h3> -->
+                </div>
+            </div>
+            <div class="column symfony">
+                <div class="content">
+                    <img src="../assets/images/portfolio/coming6.svg" alt="">
+                    <!-- <h3>Symfony</h3> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--    <div class="container">
+            Filters -->
+    <!-- <div class="row">
                 <div class="filters">
                     <span class="filter-item active" data-filter="all">Tout</span>
                     <span class="filter-item" data-filter="asp-net">ASP.NET</span>
@@ -25,10 +76,10 @@
                     <span class="filter-item" data-filter="python">Python</span>
                     <span class="filter-item" data-filter="symfony">Symfony</span>
                 </div>
-            </div>
+            </div> -->
 
-            <!-- Gallery section -->
-            <div class="row">
+    <!-- Gallery section -->
+    <!-- <div class="row">
                 <div class="gallery-item asp-net">
                     <div class="gallery-item-inner">
                         <img src="../assets/images/portfolio/coming1.svg">
@@ -73,7 +124,7 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- The overlay -->
