@@ -11,129 +11,75 @@
 
 <body>
     <button class="openbtn" onclick="openNav()">OPEN</button>
+
     <h1>PORTFOLIO</h1>
-    <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')">Tout</button>
-        <button class="btn" onclick="filterSelection('asp-net')">ASP.NET</button>
-        <button class="btn" onclick="filterSelection('csharp')">C#</button>
-        <button class="btn" onclick="filterSelection('js')">JavaScript</button>
-        <button class="btn" onclick="filterSelection('php')">PHP</button>
-        <button class="btn" onclick="filterSelection('python')">Python</button>
-        <button class="btn" onclick="filterSelection('symfony')">Symfony</button>
-    </div>
-    <div class="gallery">
-        <div class="row">
-            <div class="column asp-net">
-                <div class="content">
-                    <img src="../assets/images/portfolio/coming1.svg" alt="">
-                    <!-- <h3>ASP.NET</h3> -->
+
+    <div class="container">
+        <div class="image-container">
+            <div class="image">
+                <img src="https://picsum.photos/id/6/300" alt="">
+                <div class="middle">
+                    <div class="text">
+                        <p>ASP.NET</p>
+                        <p class="text-bis">Coming soon</p>
+                    </div>
                 </div>
             </div>
-            <div class="column csharp">
-                <div class="content">
-                    <img src="../assets/images/portfolio/coming2.svg" alt="">
-                    <!-- <h3>C#</h3> -->
+            <div class="image">
+                <img src="https://picsum.photos/id/2/300" alt="">
+                <div class="middle">
+                    <div class="text">
+                        <p>C#</p>
+                        <p class="text-bis">Coming soon</p>
+                    </div>
                 </div>
             </div>
-            <div class="column js">
-                <div class="content">
-                    <img src="../assets/images/portfolio/coming3.svg" alt="">
-                    <!-- <h3>JavaScript</h3> -->
+            <div class="image">
+                <img src="https://picsum.photos/id/7/300" alt="">
+                <div class="middle">
+                    <div class="text">
+                        <p>JavaScript</p>
+                        <p class="text-bis">Coming soon</p>
+                    </div>
                 </div>
             </div>
-            <div class="column php">
-                <div class="content">
-                    <img src="../assets/images/portfolio/coming4.svg" alt="">
-                    <!-- <h3>PHP</h3> -->
+            <div class="image">
+                <img src="https://picsum.photos/id/9/300" alt="">
+                <div class="middle">
+                    <div class="text">
+                        <p>PHP</p>
+                        <p class="text-bis">Coming soon</p>
+                    </div>
                 </div>
             </div>
-            <div class="column python">
-                <div class="content">
-                    <img src="../assets/images/portfolio/coming5.svg" alt="">
-                    <!-- <h3>Python</h3> -->
+            <div class="image">
+                <img src="https://picsum.photos/id/8/300" alt="">
+                <div class="middle">
+                    <div class="text">
+                        <p>Python</p>
+                        <p class="text-bis">Coming soon</p>
+                    </div>
                 </div>
             </div>
-            <div class="column symfony">
-                <div class="content">
-                    <img src="../assets/images/portfolio/coming6.svg" alt="">
-                    <!-- <h3>Symfony</h3> -->
+            <div class="image">
+                <img src="https://picsum.photos/id/6/300" alt="">
+                <div class="middle">
+                    <div class="text">
+                        <p>Symfony</p>
+                        <p class="text-bis">Coming soon</p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="https://picsum.photos/id/6/300" alt="">
+        </div>
     </div>
 
-
-
-    <!--    <div class="container">
-            Filters -->
-    <!-- <div class="row">
-                <div class="filters">
-                    <span class="filter-item active" data-filter="all">Tout</span>
-                    <span class="filter-item" data-filter="asp-net">ASP.NET</span>
-                    <span class="filter-item" data-filter="csharp">C#</span>
-                    <span class="filter-item" data-filter="js">JavaScript</span>
-                    <span class="filter-item" data-filter="php">PHP</span>
-                    <span class="filter-item" data-filter="python">Python</span>
-                    <span class="filter-item" data-filter="symfony">Symfony</span>
-                </div>
-            </div> -->
-
-    <!-- Gallery section -->
-    <!-- <div class="row">
-                <div class="gallery-item asp-net">
-                    <div class="gallery-item-inner">
-                        <img src="../assets/images/portfolio/coming1.svg">
-                    </div>
-                </div>
-
-
-                <div class="gallery-item csharp">
-                    <div class="gallery-item-inner">
-                        <img src="../assets/images/portfolio/coming2.svg">
-                    </div>
-                </div>
-
-
-                <div class="gallery-item js">
-                    <div class="gallery-item-inner">
-                        <img src="../assets/images/portfolio/coming3.svg">
-                    </div>
-                </div>
-
-
-                <div class="gallery-item php">
-                    <div class="gallery-item-inner">
-                        <img src="../assets/images/portfolio/coming4.svg">
-                    </div>
-                </div>
-
-
-                <div class="gallery-item python">
-                    <div class="gallery-item-inner">
-                        <img src="../assets/images/portfolio/coming5.svg">
-                    </div>
-                </div>
-
-
-                <div class="gallery-item symfony">
-                    <div class="gallery-item-inner">
-                        <img src="../assets/images/portfolio/coming6.svg">
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </div> -->
-
-
-    <!-- The overlay -->
     <div id="myNav" class="overlay">
-
-        <!-- Button to close the overlay navigation -->
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-        <!-- Overlay content -->
         <div class="overlay-content">
             <a href="../index.html">HOME</a>
             <hr>
@@ -148,6 +94,7 @@
             <a href="contact.html">CONTACT</a>
         </div>
     </div>
+
     <script src="../js/portfolio.js"></script>
 </body>
 
